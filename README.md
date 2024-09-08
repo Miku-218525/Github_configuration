@@ -14,7 +14,7 @@
     3.SSL：
         如果：SSL certificate problem: unable to get local issuer certificate
         则：（按顺序操作，直到成功）
-        （1）使用系统的CA证书：git config --global http.sslCAinfo <Git安装路径/...>ca-bundle.crt
+        （1）（默认）使用系统的CA证书：git config --global http.sslCAinfo <Git安装路径/...>ca-bundle.crt
         （2）手动下载证书并更新：
             下载网站：https://curl.se/ca/cacert.pem
             更新指令：git config --global http.sslCAinfo <下载文件存放路径>
